@@ -63,3 +63,5 @@ A simple, modern, and responsive React application to fetch real-time weather in
 5. Deploy the application.
 
 ## App
+
+[WeatherLive](https://main.dbth96xx4r2vi.amplifyapp.com/)
