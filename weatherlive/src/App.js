@@ -1,10 +1,10 @@
-import WeatherLive from "./pages/WeatherLive";
+import Home from "./pages";
 import "./styles/tailwind.css";
 
 function App() {
   return (
     <div className="min-h-screen h-screen flex items-center justify-center overflow-auto">
-      <WeatherLive />
+      <Home />
     </div>
   );
 }
