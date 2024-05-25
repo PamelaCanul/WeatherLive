@@ -4,16 +4,16 @@ import classNames from "classnames";
 const WeatherForm = ({ onFetchWeather, buttonColor }) => {
   const [city, setCity] = useState("");
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    onFetchWeather(city);
+    if (city) {
+      onFetchWeather(city);
+    }
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      id="weather-form"
       className="flex flex-col items-center mb-4 w-full max-w-sm font-sans"
     >
       <input

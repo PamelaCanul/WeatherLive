@@ -10,7 +10,7 @@ const ErrorDisplay = ({ error }) => {
   return (
     <div
       id="error-display"
-      className="flex items-center justify-center mt-4 p-4 border border-red-500 rounded-lg bg-red-100 text-red-700 max-w-md mx-auto shadow-lg"
+      className="flex items-center justify-center mt-4 p-4 border border-red-500 rounded-lg bg-red-100 text-red-700 max-w-md mx-auto shadow-lg font-sans"
     >
       <svg
         className="w-6 h-6 mr-2 text-red-700"
