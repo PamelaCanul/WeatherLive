@@ -1,21 +1,10 @@
+import WeatherLive from "./pages/WeatherLive";
 import "./styles/tailwind.css";
 
 function App() {
   return (
-    <div className="">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen h-screen flex items-center justify-center overflow-auto">
+      <WeatherLive />
     </div>
   );
 }
