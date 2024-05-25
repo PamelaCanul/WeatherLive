@@ -2,10 +2,13 @@ import React from "react";
 import classNames from "classnames";
 
 const WeatherDisplay = ({ weather, forecast, backgroundClass }) => {
+  // If there is no weather data, nothing is displayed
   if (!weather) return null;
 
+  // Weather icon URL
   const iconUrl = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`;
 
+  // Function to get the local time based on the timezone
   const getLocalTime = (timezone) => {
     const date = new Date();
     const utcTime = date.getTime() + date.getTimezoneOffset() * 60000;
@@ -15,6 +18,7 @@ const WeatherDisplay = ({ weather, forecast, backgroundClass }) => {
 
   const localTime = getLocalTime(weather.timezone);
 
+  // Function to obtain the hourly forecast
   const getHourlyForecast = () => {
     if (!forecast) return null;
 

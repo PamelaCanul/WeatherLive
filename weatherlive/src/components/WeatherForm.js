@@ -4,6 +4,7 @@ import classNames from "classnames";
 const WeatherForm = ({ onFetchWeather, buttonColor }) => {
   const [city, setCity] = useState("");
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     onFetchWeather(city);

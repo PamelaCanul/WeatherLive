@@ -1,8 +1,10 @@
 import React from "react";
 
 const ErrorDisplay = ({ error }) => {
+  //If there is no error, nothing is displayed
   if (!error) return null;
 
+  // Check if the error is due to an invalid or missing API key
   const isUnauthorizedError = error === "API key is invalid or missing";
 
   return (
